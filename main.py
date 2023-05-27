@@ -33,7 +33,7 @@ def generate_users():
     '''
     num_of_users = request.args.get('count', type=int)
     fake = Faker()
-    list_to_return = [{fake.name(): fake.pystr(6, 6).lower()+'@mail.com'} for i in range(num_of_users)]
+    list_to_return = [{fake.name(): fake.pystr(7, 7).lower()+'@mail.com'} for i in range(num_of_users)]
     return list_to_return
 
 
